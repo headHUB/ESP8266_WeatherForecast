@@ -89,6 +89,7 @@ void setupWiFiClient() {
   g_bNetworkConnected = false;
 
   WiFi.begin(ssid.c_str(), pass.c_str());
+  WiFi.mode(WIFI_STA);
   setupWiFiStatusTracker();
 }
 
